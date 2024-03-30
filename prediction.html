@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3e8; 
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 24px;
+            color: #673ab7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your review is: 
+        {% if prediction == "Positive" %}
+            <span style="color: #4caf50;">Positive</span> 
+        {% else %}
+            <span style="color: #f44336;">Negative</span> 
+        {% endif %}
+    </h1>
+
+

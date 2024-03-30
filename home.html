@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5e6ff; 
+        }
+        
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #e6ccff; 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        textarea {
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #9966ff; 
+            border-radius: 5px;
+        }
+        
+        button {
+            width: 50%;
+            padding: 10px;
+            background-color: #6600cc; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis of Real-time Flipkart Product Reviews
+        </h1>
+        <form action="/prediction" method="post">
+            <textarea name="review" placeholder="Enter your review here..." rows="4"></textarea>
+            <button type="submit">Predict Review</button>
+        </form>
+        {% if review %}
+        <div class="result">
+            <p><strong>Your Review:</strong> {{ review }}</p>
+            <p><strong>Sentiment:</strong> {{ prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
