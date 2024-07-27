@@ -49,6 +49,7 @@ The web application allows users to:
 Sentiment-Analysis-of-Flipkart-Product-Reviews/
 
 │
+
 ├── app.py # Flask application for the web interface
 
 ├── home.html # HTML template for the review submission page
