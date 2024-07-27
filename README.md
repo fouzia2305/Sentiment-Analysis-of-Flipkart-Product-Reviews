@@ -49,12 +49,19 @@ The web application allows users to:
 Sentiment-Analysis-of-Flipkart-Product-Reviews/
 │
 ├── app.py # Flask application for the web interface
+
 ├── home.html # HTML template for the review submission page
+
 ├── prediction.html # HTML template for displaying prediction results
+
 ├── requirements.txt # List of Python package dependencies
+
 ├── data_badminton.csv # Dataset file containing Flipkart product reviews
+
 ├── best_models/ # Directory containing saved models
+
 │ └── logistic_regression.pkl # Trained Logistic Regression model
+
 └── README.md # Project overview and instructions
 
 ## Model Files
