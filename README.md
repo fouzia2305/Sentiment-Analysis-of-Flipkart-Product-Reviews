@@ -62,7 +62,7 @@ Sentiment-Analysis-of-Flipkart-Product-Reviews/
 
 ├── best_models/ # Directory containing saved models
 
-| └── logistic_regression.pkl # Trained Logistic Regression model
+│ └── logistic_regression.pkl # Trained Logistic Regression model
 
 └── README.md # Project overview and instructions
 
