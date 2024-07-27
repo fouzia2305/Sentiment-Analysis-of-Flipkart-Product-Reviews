@@ -49,7 +49,6 @@ The web application allows users to:
 Sentiment-Analysis-of-Flipkart-Product-Reviews/
 
 │
-
 ├── app.py # Flask application for the web interface
 
 ├── home.html # HTML template for the review submission page
@@ -62,11 +61,9 @@ Sentiment-Analysis-of-Flipkart-Product-Reviews/
 
 ├── best_models/ # Directory containing saved models
 
- └── logistic_regression.pkl # Trained Logistic Regression model
- 
-|
+| └── logistic_regression.pkl # Trained Logistic Regression model
 
- └── README.md # Project overview and instructions
+└── README.md # Project overview and instructions
 
 ## Model Files
 
